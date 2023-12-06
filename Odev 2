@@ -1,0 +1,97 @@
+1-) Aşağıdaki C programını inceleyiniz. Programın çıktısında 8.00 sonucunu vermektedir. Ondalık olarak tanımlanan “a” ve “b” değerlerini kullanıcıdan isteyen C programını yazınız.
+#include <stdio.h>
+int main() {
+    float b, a;
+    printf("örnekteki gibi giriniz=1.1, 2.2\n");
+    printf("A , B:");
+    scanf("%f, %f", &a, &b);
+    printf("a=%.2f, b=%.2f \n", a, b);
+    printf("Toplam:%0.2f", a + b);
+   
+    return 0;
+}
+2-) Aşağıda C programında verilen HER komutun anlamını açıklayınız.
+// Ekran'a "Merhaba, nasılsın?" yazan program
+Bu satır, programın ne işe yaradığını açıklayan bir yorumdur. Bu yorum, programın "Merhaba, nasılsın?" mesajını ekrana yazdıracağını belirtir.
+#include <stdio.h>
+Bu satır, C dilinin standart giriş/çıkış kütüphanesini dahil eder. Bu kütüphane, printf() gibi giriş/çıkış işlevlerini sağlar. Bu satır olmadan printf() fonksiyonu kullanılamaz.
+int main() {
+Bu satır, main() fonksiyonunu tanımlar. main() fonksiyonu, C programlarının giriş noktasıdır. Tüm programlar main() fonksiyonuyla başlar ve main() fonksiyonuyla biter. Bu satır olmadan C programı çalışmaz.
+printf("Merhaba\n");
+Bu satır, "Merhaba" mesajını ekrana yazdırır. \n karakteri, imleci bir sonraki satıra taşır.
+printf("Nasılsın?");
+Bu satır, "Nasılsın?" mesajını ekrana yazdırır.
+return 0;
+Bu satır, programın başarıyla tamamlandığını belirtir. 0 değeri, programın hatasız bir şekilde sona erdiğini gösterir.
+
+3-) Aşağıdakilerden hangisi yanlış değişken ismidir?
+
+(Değişken isimleri Türkçe karakter içermemelidir.
+Değişken isimleri büyük ve küçük harf duyarlıdır.
+Değişken isimlerinde ilk karakter bir sayı olamaz.
+Değişken isimlerinde JavaScript etiketleri kullanılamaz.
+Değişken isimlerinde sayı, harf, alt çizgi ve dolar işareti kullanılabilir; boşluk, noktalama işareti veya sembol kullanılamaz.)
+
+1. Maas DOĞRU
+2. Maas23 DOĞRU
+3. maas$ DOĞRU
+4. 123_4 YANLIŞ (ilk karakter - sayı)
+5. MAAS DOĞRU
+6. double DOĞRU
+7. maas_$ DOĞRU
+8. İf_123 YDOĞRU
+9. Maas_23 DOĞRU
+10. le DOĞRU
+11. 23_maas YANLIŞ (ilk karakter - sayı)
+12. İnt DOĞRU
+
+4-) "total" olarak adlandırılan değişkenin doğru bir şekilde ifade edildiği:
+
+int total; // (burada "int", tam sayı türünü ifade eder ve "total" adlı bu değişkeni isimlendirdik)
+5-) Kullanıcıdan iki tamsayı alarak bunların toplamını bulan ve ekrana yazdıran bir C programı yazınız.
+
+#include <stdio.h>
+int main() {
+    int b, a;
+    printf("A ve B için değerleri girin:");
+    scanf("%d, %d", &a, &b);
+    printf("a=%d, b=%d \n", a, b);
+    printf("TOPLAM:%d", a + b);
+   
+    return 0;
+}
+6-) Aşağıdaki seçeneklerden hangisinde "total" adlı değişken 0 değeri ile başlatılmıştır?
+
+int total = 0; (Doğru)
+
+7-) Aşağıdaki komutlar yürütüldüğünde a, b ve c’nin son değerleri ne olur?
+
+int a, b, c;
+a = 8;
+b = 15;
+c = a / b + b / a * 2;
+b = b / 2;
+a = a + 3;
+a = 11, b = 7, c = 2
+
+8-) Aşağıdaki program parçasının çıktısı nedir?
+
+#include <stdio.h>
+
+int main() {
+    int a = 285;
+    double y = -27.3789;
+
+    printf("%6.2f\n", y);
+    printf("%7.1f\n", y);
+    printf("%4d\n", a / 11);
+    printf("%2d", a + 5);
+
+    return 0;
+}
+Program çıktısı:
+
+-27.38
+ -27.4
+  25
+290
