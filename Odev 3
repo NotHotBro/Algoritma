@@ -1,0 +1,84 @@
+SORU:1
+#include <stdio.h>
+int main() {
+    
+    int toplam1, toplam2, toplam3, n, h;
+    toplam1 = 1;
+    toplam2 = 1;
+ 
+    printf("'n' değerini giriniz: ");
+    scanf("%d", &n);
+ 
+    for (h = 1; h <= n; h++) {
+        printf("Terim sayısı = %d -- Terim = %d\n", h, toplam1);
+        toplam3 = toplam1 + toplam2;
+        toplam1 = toplam2;
+        toplam2 = toplam3;
+    }
+
+    return 0;
+}
+SORU:2
+#include <stdio.h>
+
+int main() {
+    
+    int a;
+    printf("Gün sayısını girin: ");
+    scanf("%d", &a);
+
+    switch (a) {
+        case 1:
+            printf("PAZARTESİ");
+            break;
+        case 2:
+            printf("SALI");
+            break;
+        case 3:
+            printf("ÇARŞAMBA");
+            break;
+        case 4:
+            printf("PERŞEMBE");
+            break;
+        case 5:
+            printf("CUMA");
+            break;
+        case 6:
+            printf("CUMARTESİ");
+            break;
+        case 7:
+            printf("PAZAR");
+            break;
+        default:
+            printf("HATALI İŞLEM");
+            break;
+    }
+    
+    return 0;
+}
+SORU:3
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+    printf("3 sayıyı girin: ");
+    scanf("%d,%d,%d", &a, &b, &c);
+    
+    if ((a > b) && (a > c)) {
+        printf("En büyük sayı = %d\n", a);
+    }
+    else if ((b > a) && (b > c)) {
+        printf("En büyük sayı = %d\n", b);
+    }
+    else if ((c >= a) && (c >= b)) {
+        printf("En büyük sayı = %d\n", c);
+    }
+    if ((a == b) || (a == c) || (b == c)) {
+        printf("Lütfen en az iki eşit sayı girin");
+    }
+    return 0;
+}
+
+
+
+
